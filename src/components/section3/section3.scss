@@ -190,6 +190,9 @@
 
 @media(max-width:600px){
     .section3{
+        &__title{
+            font-size: 30px;
+        }
         &__content{
             &__item{
                

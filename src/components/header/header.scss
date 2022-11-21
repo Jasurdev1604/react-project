@@ -1,0 +1,161 @@
+header{
+    user-select: none;
+    background:  #FFF5F0;
+    padding: 30px 0;
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 40px;
+        &__left{
+            display: flex;
+            align-items:center;
+            gap: 67px;
+            &__logo{
+                a{
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: #252B42;
+                }
+            }
+            #input{
+                display:none;
+            }
+            &__nav{
+                display: flex;
+                align-items:center;
+                gap: 20px;
+                font-family: 'Montserrat',sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                color:#737373;
+            }
+        }
+        &__buttons{
+            display: flex;
+            gap: 10px;
+            &__login{
+                border: none;
+                background-color: transparent;
+                padding: 15px 25px;
+                color: #1BA0AB;
+                font-size: 14px;
+                font-weight: 700;
+                font-family: 'Montserrat',sans-serif;
+                border: 2px solid transparent;
+                border-radius: 3px;
+                &:hover{
+                    background: #1BA0AB;
+                    color: #FFFFFF;
+                }
+            }
+            &__join{
+                border: none;
+                background-color: #1BA0AB;
+                padding: 15px;
+                color: #FFFFFF;
+                font-size: 14px;
+                font-weight: 700;
+                font-family: 'Montserrat',sans-serif;
+                border: 2px solid transparent;
+                border-radius: 3px;
+                border:1px solid transparent;
+                &:hover{
+                    color:#1BA0AB;
+                    background:transparent;
+                    border:1px solid #1BA0AB;
+                }
+                i{
+                    margin-left:10px;
+                }
+            }
+        }
+        .bar{
+            display: none;
+            cursor: pointer;
+            font-size: 20px;
+            color:rgba(0, 0, 0, 0.945);
+            margin: 0 10px;
+        }
+    }
+}
+
+input[id="input"]:checked ~ ul{
+    transform: translateX(0);
+}
+
+@media (max-width:900px){
+    header{
+        .header{
+            margin: 0;
+        }
+    }
+}
+@media (max-width:800px){
+    .container{
+        width: 95%;
+    }
+    header{
+        .header{
+            &__left{
+                gap: 10px;
+                &__logo{
+                   a{
+                    font-size: 20px;
+                   }
+                }
+                &__nav{
+                    gap: 15px;
+                }
+            }
+            &__buttons{
+                gap: 7px;
+                &__join{
+                    padding: 10px;
+                }
+                &__login{
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:650px){
+    header{
+        .header{
+            &__left{
+                &__nav{
+                    transform: translateX(-120%);
+                    transition: 0.4s;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    flex-direction: column;
+                    justify-content: center;
+                    background:#FFF5F0;
+                    width: 50%;
+                    height: 100vh;
+                    &__li{
+                        width: 70%;
+                        border-radius:5px;
+                        padding: 5px 0;
+                        text-align: center;
+                        a{
+                            font-size: 22px;
+                        }
+                        &:hover{
+                            background:#1BA0AB;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+            .bar{
+                display: block;
+                background:transparent;
+                border:none;
+            }
+        }
+    }
+}

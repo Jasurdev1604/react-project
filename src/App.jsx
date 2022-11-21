@@ -3,6 +3,7 @@ import Header from './components/header/header';
 import Showcase from './components/showcase/showcase';
 import Section1 from './components/section1/section1';
 import Section2 from './components/section2/section2';
+import Section3 from './components/section3/section3';
 
 function App() { 
   return (
@@ -11,6 +12,7 @@ function App() {
     <Showcase/>
     <Section1/>
     <Section2/>
+    <Section3/>
   </div>
   );
 }

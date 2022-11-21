@@ -1,0 +1,42 @@
+.form{
+    padding: 160px 0;
+    background: #FFF5F0;
+    text-align: center;
+    &__mintitle{
+        font-family: 'Monserrat',sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        color:#1BA0AB;
+    }
+    &__title{
+        font-family: 'Monserrat',sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        color:#252B42;
+        padding: 10px 0;
+    }
+    &__p{
+        font-family: 'Monserrat',sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #737373;
+    }
+    form{
+        margin-top: 80px;
+        input{
+            padding: 15px 0 15px 20px;
+            border: 1px solid #E6E6E6;
+            width: 40%;
+        }
+        button{
+            cursor: pointer;
+            padding: 15px 22.5px;
+            border: 1px solid #E6E6E6;
+            font-family: 'Monserrat',sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #FFF5F0;
+            background:#1BA0AB;
+        }
+    }
+}

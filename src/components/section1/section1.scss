@@ -1,0 +1,107 @@
+.section{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 160px 0 200px;
+    &__item{
+        &__span{
+            width: 94px;
+            height: 7px;
+            background:#E74040;
+        }
+        &__title{
+            font-family: 'Monserrat',sans-serif;
+            font-weight: 700;
+            font-size: 50px;
+            padding: 35px 0;
+            color: #252B42;
+        }
+        &__p{
+            color:#737373;
+            font-family: 'Monserrat',sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            width: 60%;
+            line-height: 20px;
+        }
+        &__button{
+            padding-top: 30px;
+            button{
+                padding: 5px;
+                border-radius: 3px;
+                cursor: pointer;
+                border: none;
+                background:transparent;
+                color:#1BA0AB;
+                font-family: 'Monserrat',sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                border: 1px solid transparent;
+                i{
+                    font-size: 16px;
+                }
+                &:hover{
+                    border: 1px solid #1BA0AB;
+                }
+            }
+        }
+    }
+    &__boxes{
+        display: flex;
+        align-items:stretch;
+        gap:15px;
+        &__box{
+            padding: 40px;
+            &__title{
+                padding: 20px 0;
+                color: #252B42;
+                font-family: 'Monserrat',sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+            }
+            &__span{
+                width: 50px;
+                height: 2px;
+                background:#E74040;
+            }
+            &__p{
+                color:#737373;
+                font-family: 'Monserrat',sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                padding-top: 20px;
+            }
+            &:first-child{
+                box-shadow: 0px 13px 19px 0px #00000012;
+            }
+            &:last-child{
+                box-shadow: 0px 13px 19px 0px #00000012;
+            }
+        }
+    }
+}
+@media (max-width:1090px){
+    .section{
+        gap: 0;
+    }
+}
+@media (max-width:750px){
+    .section{
+        padding: 100px 0;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+@media (max-width:500px){
+    .section{
+        &__item{
+            &__p{
+                width: 100%;
+            }
+        }
+        &__boxes{
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+}

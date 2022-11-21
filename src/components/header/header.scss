@@ -32,13 +32,15 @@ header{
                 color:#737373;
             }
             #all{
+                display: none;
                 position: fixed;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100vh;
                 background:rgba(0, 0, 0, 0.523);
-                z-index: -90;
+                z-index: -99;
+                opacity: 0;
             }
         }
         &__buttons{
@@ -95,6 +97,7 @@ input[id = "input"]:checked + ul{
 } 
 input[id = "input"]:checked ~ #all{
     z-index: 90;
+    opacity: 1;
 } 
  
 @media (max-width:900px){
@@ -162,6 +165,9 @@ input[id = "input"]:checked ~ #all{
                             color: #FFFFFF;
                         }
                     }
+                }
+                #all{
+                    display: block;
                 }
             }
             .bar{

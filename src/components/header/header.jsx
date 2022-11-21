@@ -3,7 +3,7 @@ import "./header.scss";
 
 
 const Header = () =>{
-    
+     
     return(
         <header>
             <div className="container">
@@ -17,6 +17,7 @@ const Header = () =>{
                         <li className="header__left__nav__li"><a href="#">Pricing</a></li>
                         <li className="header__left__nav__li"><a href="#">Contact</a></li>
                     </ul>
+                    <label for="input" id="all" ></label>
                      </div>
                     <div className="header__buttons">
                         <button className="header__buttons__login">Login</button>

@@ -4,7 +4,7 @@ import Showcase from './components/showcase/showcase';
 
 function App() { 
   return (
-  <div className="App">
+  <div className="App"> 
     <Header/> 
     <Showcase/>
   </div>

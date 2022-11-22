@@ -7,6 +7,7 @@ import Section3 from './components/section3/section3';
 import Section4 from './components/section4/section4';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
+import Bottom from './components/bottom/bottom';
 
 function App() { 
   return (
@@ -19,6 +20,7 @@ function App() {
     <Section4/>
     <Contact/>
     <Footer/>
+    <Bottom/>
   </div>
   );
 }

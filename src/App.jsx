@@ -8,6 +8,7 @@ import Section4 from './components/section4/section4';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 import Bottom from './components/bottom/bottom';
+import Person from './components/Persons/persons';
 
 function App() { 
   return (
@@ -17,6 +18,7 @@ function App() {
     <Section1/>
     <Section2/>
     <Section3/>
+    <Person/>
     <Section4/>
     <Contact/>
     <Footer/>
